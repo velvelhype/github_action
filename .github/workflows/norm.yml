@@ -13,4 +13,4 @@
        
        - name: Make test
          run: norminette
-		working-directory:test_tests
+		working-directory: test_tests
