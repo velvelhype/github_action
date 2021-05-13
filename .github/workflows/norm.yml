@@ -16,4 +16,4 @@ defaults:
          uses: actions/checkout@v2
        
        - name: Make test
-         run: norminette
+         run: make test
