@@ -2,10 +2,6 @@
  name: NormCI
  
  on: [pull_request, workflow_dispatch]
-
-defaults:
-  run:
-    working-directory: test_tests
  
  jobs:
    norm:
@@ -14,6 +10,9 @@ defaults:
      steps:
        - name: checkout git repository
          uses: actions/checkout@v2
-       
+      
+	- name: change directory
+ 	  run: cd test_tests
+ 
        - name: Make test
          run: make test
