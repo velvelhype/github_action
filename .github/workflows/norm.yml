@@ -2,6 +2,10 @@
  name: NormCI
  
  on: [pull_request, workflow_dispatch]
+
+defaults:
+  run:
+    working-directory: test_tests
  
  jobs:
    norm:
@@ -13,4 +17,3 @@
        
        - name: Make test
          run: norminette
-		working-directory: test_tests
