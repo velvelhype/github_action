@@ -8,11 +8,11 @@
      runs-on: ubuntu-latest
  
      steps:
-        - name: checkout git repository
+       - name: checkout git repository
          uses: actions/checkout@v2
       
-        - name: change directory
+       - name: change directory
          run: cd test_tests
  
-        - name: Make test
+       - name: Make test
          run: make test
